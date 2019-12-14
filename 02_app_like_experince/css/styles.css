@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #2948ff;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  padding: 0 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pwainstall {
+  -webkit-appearance: none;
+  background: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 32px;
+  color: #505050;
+  font-size: 1rem;
+
+  transition: all 0.3s;
+}
+/* scaling for mouse hover */
+#pwainstall:hover {
+  transform: scale(1.2);
+}
+
+/* trget only the PWA mode */
+@media all and (display-mode: standalone) {
+  /* disable user gestures */
+  body {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+
+  /* specific scaling for mobile click */
+  /* on click */
+  #pwainstall:active {
+    transform: scale(1.2) !important;
+  }
+  /* after click */
+  #pwainstall:hover {
+    transform: scale(1) !important;
+  }
+}

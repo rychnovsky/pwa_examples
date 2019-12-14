@@ -1,0 +1,20 @@
+{
+  "name": "App-Like PWA",
+  "short_name": "My PWA",
+  "start_url": "/index.html",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/pwa-assets/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa-assets/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2948ff",
+  "background_color": "#2948ff"
+}

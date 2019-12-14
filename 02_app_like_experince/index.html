@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>App-Like PWA</title>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <!-- Link Manifest File -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/pwa-assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/pwa-assets/favicon-16x16.png" />
+    <link rel="shortcut icon" href="/pwa-assets/favicon.ico" />
+
+    <!-- Windows Phones Tiles -->
+    <meta name="msapplication-TileColor" content="#2948ff" />
+    <meta name="msapplication-config" content="/pwa-assets/browserconfig.xml" />
+
+    <!-- Android Address Bar -->
+    <meta name="theme-color" content="#2948ff" />
+
+    <!-- Apple -->
+    <!-- Touch Bar -->
+    <link rel="mask-icon" href="/pwa-assets/safari-pinned-tab.svg" color="#2948ff" />
+    <!-- Home Screen Icon -->
+    <link rel="apple-touch-icon" href="/pwa-assets/apple-touch-icon.png" />
+
+    <!-- Customize Apple Status Bar -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- Hide Safari UI Components -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <!-- Splash Screen for iPhone sizes -->
+    <!-- iPhone X, Xs (1125px x 2436px) // other screen sizes should be added accordingly -->
+    <link
+      rel="apple-touch-startup-image"
+      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+      href="/pwa-assets/apple-launch/apple-launch.png"
+    />
+  </head>
+  <body ontouchstart="">
+    <div class="container">
+      <h1>App-Like PWA</h1>
+      <p>
+        This project demonstrates how the design of a PWA can be changed by Web App Manifest and
+        meta tags.
+      </p>
+      <button id="pwainstall">Install me</button>
+    </div>
+  </body>
+</html>
